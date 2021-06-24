@@ -1,0 +1,103 @@
+* {box-sizing:border-box;
+   margin: auto;	
+}
+
+body {
+  background-image: linear-gradient(90deg, #dbdbdb, #a3a3a3 100%);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 667px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border: 0.25px solid white;
+  border-radius: 10px 10px 0px 0px;
+  z-index: -1;
+  box-shadow: 5px 5px 25px 5px rgba(85, 85, 85, 0.397);
+}
+
+.slideshow-container .NextArrow{
+  position: absolute;
+  padding-top: 32%;
+  top: 0%;
+  right: 0px;
+  width: 50px;
+  height: 667px;
+  background: linear-gradient(90deg, #dbdbdb13 0%, #353535cb 100%);
+  text-align: center;
+  font: 24px;
+  color: #FFF;
+  z-index: 5;
+}
+      
+.slideshow-container .PrevArrow{
+  position: absolute;
+  padding-top: 32%;
+  top: 0%;
+  left: 0px;
+  width: 50px;
+  height: 667px;
+  background: linear-gradient(90deg, #353535cb 0%, #dbdbdb13 100%);
+  text-align: center;
+  font: 24px;
+  color: #FFF;
+  z-index: 5;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+
+  /* position: absolute; */
+  /* left: -100px;
+  width: 100px;
+  height: 100px; */
+  /* background: blue; */
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.PrevArrow:hover, .NextArrow:hover {
+  background-color: rgba(0, 0, 0, 0.863);
+}
+
+/* Faint animation */
+.slide {
+  /* -webkit-animation-name: slide;
+  -webkit-animation-duration: 5s;
+  animation-name: slide;
+  animation-duration: 5s infinite; */
+
+  -webkit-animation: slide 15.5s forwards;
+  -webkit-animation-delay: 17s;
+  animation: slide 15.5s forwards;
+  animation-delay: 17s;
+}
+
+@-webkit-keyframes slide {
+  from {opacity: 5.5}
+  to {opacity: 2}
+  /* from {right: 0px;}
+  to {right: 200px;} */
+}
+
+@keyframes slide {
+  from {opacity: 5.5}
+  to {opacity: 2}
+  /* from {right: 0px;}
+  to {right: 200px;} */
+}
+
+
+/* @-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+} */

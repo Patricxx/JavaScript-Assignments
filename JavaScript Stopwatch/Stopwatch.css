@@ -1,0 +1,153 @@
+* {box-sizing:border-box;
+   margin: 0;
+   padding: 0;	
+   }
+
+body{
+   background-image: linear-gradient(90deg, #dbdbdb, #a3a3a3 100%);
+   }
+
+/* Case */
+.stopwatch-case{
+   position: relative;
+   margin: auto;
+   margin-top: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+   height: 500px;
+   width: 500px; 
+   border: 20px solid #797979;;
+   border-radius: 50%;
+   box-shadow: 0 0 0px rgba(255, 255, 255, 0.623), 0 0 50px #000000;
+   }
+
+.stopwatch-case .stopwatch-case-line1{
+   position: relative;
+   margin: auto;
+   margin-top: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 460px;
+   width: 460px;
+   border: 5px solid #000000;
+   border-radius: 50%;
+   z-index: auto;
+   }
+
+.stopwatch-case .stopwatch-case-line1 .stopwatch-case-line2{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+   height: 450px;
+   width: 450px;
+   border: 10px solid #333333;
+   border-radius: 50%;
+   z-index: auto;
+   }
+
+.stopwatch-case:hover{
+   box-shadow: 0 0 0px rgba(255, 255, 255, 0.623), 0 0 200px #970000;
+   }
+
+/* Inner Works */   
+.name {
+   top: 80px;
+   font-family: "montserrat";
+   position: absolute;
+   text-align: center;
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-size: 30px;
+   width: 100%;
+   text-shadow: 0 0 0px rgba(255, 255, 255, 0.623), 0 0 50px #000000;
+   }
+
+/* Buttons */  
+.controls {
+   top: 70px;
+   height: 100px;
+   font-family: "montserrat";
+   position: absolute;
+   text-align: center;
+   line-height: 520px;
+   width: 100%;
+   }
+
+.button {
+   letter-spacing: -0.5x;
+   text-decoration: none;
+   color: #000000;
+   font-size: 20px;
+   margin: 20px;
+   text-decoration: none;
+   }
+
+.controls .button-start {
+   padding: 10px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: #78b86f;
+   border: 1px solid #000000;
+   border-radius: 50%;
+   box-shadow: 0 0 0px rgba(255, 255, 255, 0.623), 0 0 15px #000000;
+   z-index: 2;
+   }
+	 
+.controls .button-stop {
+   padding: 12px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: #b89b6f;
+   border: 1px solid #000000;
+   border-radius: 50%;
+   box-shadow: 0 0 0px rgba(255, 255, 255, 0.623), 0 0 15px #000000;
+   z-index: 2;
+   }  
+     
+.controls .button-reset {
+   padding: 8px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: #b86f6f;   
+   border: 1px solid #000000;
+   border-radius: 50%;
+   box-shadow: 0 0 0px rgba(255, 255, 255, 0.623), 0 0 15px #000000;
+   z-index: 2;
+   }
+
+.button-start:hover {
+   color: rgb(177, 0, 0);
+   border: 1px solid #000000;
+   border-radius: 50%;
+   box-shadow: 0 0 0px rgba(255, 255, 255, 0.623), 0 0 15px #000000;
+   z-index: 2;
+   }
+
+.button-stop:hover {
+   color: rgb(177, 0, 0);
+   border: 1px solid #000000;
+   border-radius: 50%;
+   box-shadow: 0 0 0px rgba(255, 255, 255, 0.623), 0 0 15px #000000;
+   z-index: 2;
+   }
+
+.button-reset:hover {
+   color: rgb(177, 0, 0);
+   border: 1px solid #000000;
+   border-radius: 50%;
+   box-shadow: 0 0 0px rgba(255, 255, 255, 0.623), 0 0 15px #000000;
+   z-index: 2;
+   }   
+
+/* Timer */
+.stopwatch {
+   font-family: "montserrat";
+   font-weight: 600;
+   letter-spacing: -2px;
+   color: black;
+   font-size: 76px;
+   text-align: center;
+   }
